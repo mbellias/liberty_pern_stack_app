@@ -1,0 +1,17 @@
+.video {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 850px) {
+  .video video {
+    width: 100vh;
+    height: auto;
+  }
+}
+
+@media (max-width: 849px) {
+  .video video {
+    width: 100%;
+  }
+}

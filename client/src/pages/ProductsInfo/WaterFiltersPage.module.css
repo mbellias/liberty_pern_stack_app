@@ -1,0 +1,19 @@
+.slideshow {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.filter {
+  max-width: 85%;
+  height: auto;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

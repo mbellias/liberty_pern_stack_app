@@ -1,0 +1,116 @@
+.title {
+  text-align: center;
+}
+
+.loading {
+  text-align: center;
+}
+
+.empty {
+  display: flex;
+  margin: 0 auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+thead th,
+tbody td {
+  padding: 8px;
+}
+
+@media only screen and (max-width: 1200px) {
+  table {
+    margin-top: 10px;
+  }
+
+  thead {
+    display: none;
+    text-wrap: nowrap;
+  }
+
+  th,
+  td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  th {
+    text-align: left;
+  }
+
+  td {
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+    padding: 8px;
+  }
+
+  tr {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  th:first-child,
+  td:first-child {
+    display: table-cell;
+  }
+
+  tbody td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+  }
+
+  tbody td:before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: inline-block;
+    width: 50%;
+    box-sizing: border-box;
+  }
+
+  td[data-label='ID'],
+  tbody td[data-label='Name'],
+  td[data-label='Price'],
+  td[data-label='Image URL'] {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  td[data-label='Image URL'] {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  tbody td[data-label='Image URL'] {
+    word-break: break-all;
+  }
+
+  tr {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}

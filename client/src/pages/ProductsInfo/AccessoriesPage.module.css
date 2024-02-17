@@ -1,0 +1,40 @@
+.title {
+  text-align: center;
+}
+
+.first-slideshow {
+  margin: 0 auto;
+  margin-bottom: -100px;
+  width: 50rem;
+  height: 75rem;
+}
+
+.second-slideshow {
+  margin: 0 auto;
+  margin-bottom: -100px;
+  width: 50rem;
+  height: 75rem;
+}
+
+.third-slideshow {
+  margin: 0 auto;
+  width: 42rem;
+  height: 75rem;
+}
+
+@media (max-width: 850px) {
+  .first-slideshow {
+    width: 22rem;
+    height: 38rem;
+  }
+
+  .second-slideshow {
+    width: 22rem;
+    height: 38rem;
+  }
+
+  .third-slideshow {
+    width: 22rem;
+    height: 38rem;
+  }
+}

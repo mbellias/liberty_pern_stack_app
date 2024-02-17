@@ -1,0 +1,138 @@
+.form {
+  max-width: 625px;
+  margin: 0 auto;
+  margin-top: 50px;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  padding: 20px;
+  background-image: url('https://res.cloudinary.com/dhnhzlu0g/image/upload/v1701647250/liberty-nutrition-system/contact-form-background_y0arsh.webp');
+  background-size: cover;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 700px) {
+  .form {
+    max-width: 250px;
+  }
+}
+
+h3 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+input {
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+.button-container {
+  text-align: center;
+}
+
+button {
+  font-family: inherit;
+  font-size: 16px;
+  background-color: #87ceeb;
+  color: #fff;
+  border: solid 1px #fff;
+  text-transform: uppercase;
+  padding: 10px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+button:hover,
+button:active {
+  background: #eee;
+}
+
+button:disabled,
+button:disabled:hover,
+button:disabled:active {
+  background-color: #ccc;
+  color: #292929;
+  border: #ccc;
+  cursor: not-allowed;
+}
+
+.form-control {
+  margin-bottom: 1rem;
+}
+
+.form-control input,
+.form-control label {
+  display: block;
+}
+
+.form-control label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.form-control input,
+.form-control select {
+  font: inherit;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 20rem;
+  max-width: 80%;
+}
+
+.invalid input {
+  border: 1px solid #b40e0e;
+  background-color: #fddddd;
+}
+
+.invalid input:focus {
+  border-color: #ff8800;
+  background-color: #fbe8d2;
+}
+
+.invalid textarea {
+  border: 1px solid #b40e0e;
+  background-color: #fddddd;
+}
+
+.invalid textarea:focus {
+  border-color: #ff8800;
+  background-color: #fbe8d2;
+}
+
+.error-text {
+  color: #000000;
+}
+
+.card {
+  margin-top: 10rem;
+}
+
+.submitted {
+  padding: 10px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 700px) {
+  .form-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

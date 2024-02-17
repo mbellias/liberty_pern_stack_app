@@ -1,0 +1,101 @@
+.container {
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.container,
+.back {
+  flex-direction: column;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+  width: 200px;
+  height: 275px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.description {
+  margin-bottom: 20px;
+}
+
+.add-to-cart {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  margin: 0 auto;
+  text-transform: none;
+}
+
+.add-to-cart:hover,
+.add-to-cart:active,
+.back-button:hover,
+.back-button:active,
+.forward-button:hover,
+.forward-button:active {
+  background-color: #0056b3;
+}
+
+.back-button,
+.forward-button {
+  padding: 10px 20px; /* Adjust padding as needed */
+  font-size: 16px; /* Adjust font size as needed */
+  cursor: pointer;
+}
+
+.back-button {
+  float: left;
+  margin-left: 5px; /* Adjust left margin as needed */
+  background-color: #007bff;
+}
+
+.forward-button {
+  float: right;
+  margin-right: 5px; /* Adjust right margin as needed */
+  background-color: #007bff;
+}
+
+.back {
+  text-align: center;
+  text-decoration: none;
+  margin-right: 50px;
+  color: #000000;
+  border-radius: 5px;
+  width: 7%;
+  padding-top: 5px;
+}
+
+.back:hover,
+.back:active {
+  background-color: #fff;
+}

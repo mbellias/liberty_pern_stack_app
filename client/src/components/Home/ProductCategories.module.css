@@ -1,0 +1,21 @@
+@media (min-width: 851px) {
+  .product-categories {
+    display: inline-block;
+  }
+
+  .product-categories img {
+    width: 20%;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 850px) {
+  .product-categories img {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem auto;
+    width: 30%;
+    max-height: auto;
+  }
+}

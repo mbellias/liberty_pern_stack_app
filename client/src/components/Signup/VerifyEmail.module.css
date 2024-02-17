@@ -1,0 +1,8 @@
+.card {
+  width: fit-content;
+  margin-top: 10rem;
+}
+
+.card h4 {
+  text-align: center;
+}

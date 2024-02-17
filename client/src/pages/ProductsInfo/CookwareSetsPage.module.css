@@ -1,0 +1,61 @@
+main h1 {
+  text-align: center;
+}
+
+.cookware-set {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+}
+
+.cookware-set img {
+  width: 50%;
+  height: 50%;
+  margin-left: 0 auto;
+  margin-bottom: 30px;
+}
+
+.cookware-title {
+  text-decoration: underline;
+  text-align: center;
+  margin-left: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .cookware-set {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cookware-set img {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .cookware-title {
+    text-decoration: underline;
+    text-align: center;
+  }
+
+  .cookware-list {
+    margin: 0 auto;
+  }
+}
+
+.cookware-list {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}

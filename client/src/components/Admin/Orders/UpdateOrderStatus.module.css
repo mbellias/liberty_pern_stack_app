@@ -1,0 +1,37 @@
+.statusForm {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.statusForm h4 {
+  text-align: center;
+}
+
+.statusForm legend {
+  text-align: center;
+}
+
+.statusForm fieldset {
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.statusForm button {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.statusUpdated {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.orderId {
+  margin: 0 auto;
+}
+
+.orderId input {
+  width: 100%;
+}

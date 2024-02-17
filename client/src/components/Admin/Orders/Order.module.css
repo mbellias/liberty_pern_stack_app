@@ -1,0 +1,31 @@
+.order {
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  td[data-label='User ID'],
+  td[data-label='First Name'],
+  td[data-label='Last Name'],
+  td[data-label='Email'],
+  td[data-label='Phone Number'],
+  td[data-label='Status'] {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  td[data-label='ID'] {
+    background-color: #f2f2f2;
+  }
+
+  tr {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}

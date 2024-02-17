@@ -1,0 +1,36 @@
+.cart {
+  text-align: center;
+}
+
+.total {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 50px;
+}
+
+.total h4 {
+  border-top: 0.5px solid #000000;
+  padding: 5px;
+}
+
+@media (max-width: 850px) {
+  .total h4 {
+    border-top: none;
+  }
+}
+
+.confirm {
+  border: none;
+  display: flex;
+  margin: 0 auto;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}

@@ -1,0 +1,27 @@
+.productPrice {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.productPrice h4 {
+  text-align: center;
+}
+
+.priceInput {
+  margin: 0 auto;
+}
+
+.priceInput input {
+  width: 100%;
+}
+
+.priceUpdated {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.productPrice button {
+  width: fit-content;
+  margin: 0 auto;
+}

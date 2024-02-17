@@ -1,0 +1,30 @@
+.product-item {
+  width: calc(33.33% - 10px);
+  margin: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: aliceblue;
+  border-radius: 10px;
+}
+
+@media (max-width: 850px) {
+  .product-item {
+    width: calc(100% - 10px);
+  }
+}
+
+.cart-button {
+  font-family: inherit;
+  background-color: #4169e1;
+  color: #fff;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  text-transform: none;
+}
+
+.cart-button:hover {
+  background: #0056b3;
+}

@@ -1,0 +1,77 @@
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  margin: 0 auto;
+}
+
+.slide img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.active {
+  display: block;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.prevButton,
+.nextButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  background-color: #333;
+  color: #fff;
+  padding: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.prevButton {
+  left: 10px;
+}
+
+.nextButton {
+  right: 10px;
+}
+
+/* Add a hover effect for buttons */
+.prevButton:hover,
+.nextButton:hover {
+  background-color: #555;
+}
+
+.pauseButton {
+  position: absolute;
+  bottom: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+  background-color: #333;
+  color: #fff;
+  padding: 2px 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pauseButton:hover {
+  background-color: #555;
+}

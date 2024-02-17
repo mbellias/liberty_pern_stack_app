@@ -1,0 +1,22 @@
+.logout {
+  display: flex;
+  margin-left: auto;
+  border: none;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  width: 3rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.firstName {
+  margin: 0;
+  margin-top: 10px;
+}

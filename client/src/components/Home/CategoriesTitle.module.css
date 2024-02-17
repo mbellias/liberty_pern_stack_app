@@ -1,0 +1,9 @@
+.categories-title {
+  text-align: center;
+}
+
+@media (max-width: 850px) {
+  .categories-title {
+    font-size: 14px;
+  }
+}
