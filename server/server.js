@@ -1,6 +1,5 @@
 const express = require('express');
 const path = require('path');
-const cors = require('cors');
 const app = express();
 const cookieParser = require('cookie-parser');
 const sequelize = require('./config/database');
@@ -17,13 +16,7 @@ const orderRouter = require('./routes/order-routes');
 const adminRouter = require('./routes/admin-routes');
 require('dotenv').config();
 
-const corsOptions = {
-  origin: 'https://libertynutritionsystem.com', // Update this with the correct origin of your UI
-  credentials: true,
-};
-
 // Middleware
-app.use(cors(corsOptions));
 app.use((req, res, next) => {
   res.header(
     'Access-Control-Allow-Origin',

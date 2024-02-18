@@ -76,7 +76,7 @@ const sendVerificationEmail = async (email, token) => {
     const mailOptions = {
       from: process.env.USER_EMAIL,
       to: email,
-      subject: 'Verify Your Email',
+      subject: 'Verify Email - Liberty Nutrition System',
       html: `<p>Click the following link to verify your email: <a href="${process.env.BASE_URL}/verify-email/${token}">Verify Email</a></p>\n<p>The link expires in 24hrs.</p>`,
     };
 

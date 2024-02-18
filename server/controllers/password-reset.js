@@ -86,7 +86,7 @@ exports.checkEmailValidity = async (req, res) => {
       const mailOptions = {
         from: process.env.USER_EMAIL,
         to: email,
-        subject: 'Password Reset',
+        subject: 'Password Reset - Liberty Nutrition System',
         html: `Click the following link to reset your password: <a href="${resetLink}">${resetLink}</a>`,
       };
 

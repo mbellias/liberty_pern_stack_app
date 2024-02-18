@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { fetchGetCart } from '../../store/cart-actions';
 import styles from './MobileNavigation.module.css';
 
 const MobileNavigation = () => {
@@ -8,6 +9,11 @@ const MobileNavigation = () => {
   const [isProductsOpen, setIsProductsOpen] = useState(false);
   const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
   const user = useSelector((state) => state.auth.user);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchGetCart());
+  }, [dispatch]);
 
   const cartItems = useSelector((state) => state.cart.items);
   const cartQuantity = cartItems
@@ -53,7 +59,7 @@ const MobileNavigation = () => {
   }`;
 
   return (
-    <React.Fragment>
+    <>
       <button
         className={styles['menu-button']}
         id="btnNav"
@@ -147,7 +153,7 @@ const MobileNavigation = () => {
           </Link>
         </div>
       </nav>
-    </React.Fragment>
+    </>
   );
 };
 
